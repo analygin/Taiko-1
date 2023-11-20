@@ -1,0 +1,32 @@
+подходящая установка git
+обновление sudo apt
+
+sudo apt install apt-transport-https CA-сертификаты Curl Software-Properties-Common
+
+завиток -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key добавить -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu фокусная стабильная версия"
+
+политика apt-cache в docker-ce
+
+sudo apt установить docker-ce
+
+Шаг 2
+git-клон https://github.com/taikoxyz/simple-taiko-node.git
+cd простой-тайко-узел
+
+cp .env.sample .env
+
+нано .env
+
+ Заходим и регистрируемся на Alchemy. В этом разделе жмем + Create new app. 
+
+3) Chain выбираем Ethereum, Network выбираем Ethereum Sepolia. Создаем.
+
+4) Нажимаем API key, копируем строчку под HTTPS. Открываем Terminus и вставляем сразу после L1_ENDPOINT_HTTP= 
+(двигаться по текстовому файлу можно стрелочками на клаве, ВСТАВЛЯЕМ ВСЕ БЕЗ ПРОБЕЛА ПОСЛЕ =)
+Заходим обратно в Alchemy и теперь копируем строчку под WebSocket.
+Жмем Ctrl + X, Y затем Enter
+
+
+докер составить -d
